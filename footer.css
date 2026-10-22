@@ -1,0 +1,5 @@
+.site-footer{width:100vw;box-sizing:border-box;border-top:1px solid var(--line);margin-top:100px;margin-left:calc(50% - 50vw);padding:28px 4.6vw;display:flex;align-items:center;justify-content:space-between;gap:28px;color:var(--muted);font:10px var(--mono);letter-spacing:.03em}
+.site-footer-links{display:flex;gap:22px}
+.site-footer a{color:inherit;text-decoration:none;transition:color .2s ease}
+.site-footer a:hover{color:var(--accent)}
+@media(max-width:700px){.site-footer{margin-top:70px;padding:25px 7vw;align-items:flex-start;flex-direction:column;gap:18px}.site-footer-links{flex-wrap:wrap;gap:14px}}

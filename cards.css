@@ -1,0 +1,19 @@
+.project-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.project-card{border:1px solid var(--line);background:rgba(21,21,21,.86);padding:14px;min-width:0}
+.project-image-placeholder{height:270px;border:1px dashed #5a5a55;background:linear-gradient(135deg,#202020,#171717);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--accent);font:11px var(--mono);letter-spacing:.08em}
+.project-image-placeholder:before{content:'＋';font:34px var(--sans);font-weight:300;color:var(--accent)}
+.project-image-placeholder small{font:10px var(--mono);color:var(--muted);letter-spacing:0}
+.placeholder-vr{background:linear-gradient(135deg,#19241f,#151918)}
+.card-heading{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid var(--line);padding:20px 3px 16px}
+.card-heading h3{font-size:25px;letter-spacing:-.05em;margin:4px 0 10px}
+.card-heading .project-date{margin:0!important}
+.project-number{font:10px var(--mono);color:var(--muted);margin:0}
+.project-card .project-description{font-family:var(--sans);font-size:13px;line-height:1.55;color:var(--muted);margin:18px 3px}
+.project-card .project-tech{font:10px var(--mono);color:var(--text);letter-spacing:.03em;margin:0 3px 5px}
+.project-card .project-arrow{font-size:23px;color:var(--accent)}
+@media(max-width:700px){.project-cards{grid-template-columns:1fr;gap:16px}
+.project-image-placeholder{height:225px}
+.card-heading h3{font-size:22px}
+}
+
+

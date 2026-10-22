@@ -1,0 +1,7 @@
+.project-card{display:block;color:var(--text);text-decoration:none;cursor:pointer;transition:transform .25s ease,border-color .25s ease}
+.project-card:hover{transform:translateY(-5px);border-color:var(--accent)}
+.project-card:hover .project-arrow{transform:translate(3px,-3px)}
+.project-arrow{transition:transform .25s ease}
+.project-card .project-tech{margin-top:18px}
+
+
