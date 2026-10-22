@@ -39,8 +39,3 @@ Then open [http://localhost:8000](http://localhost:8000) in your browser.
 - The primary accent color is `#FD3DB5`.
 - Contact email: `palmaisaiah.d@gmail.com`.
 
-## Deploy to Vercel
-
-This is a static HTML, CSS, and JavaScript site. Import the project into Vercel and leave the build command empty. Use the project root as the root directory.
-
-Vercel will provide a free `.vercel.app` address after deployment. A custom domain such as `isaiahpalma.site` can be connected later by registering the domain and configuring its DNS records in Vercel.
