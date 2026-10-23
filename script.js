@@ -15,7 +15,14 @@ const typingParts = document.querySelectorAll('.typing-part');
 if (typingSequence && typingParts.length && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const textParts = ['Digital experiences,', 'built with intention.'];
   let delay = 0;
+  typingSequence.classList.add('typing-active-first');
   textParts.forEach((text, partIndex) => {
+    if (partIndex === 1) {
+      setTimeout(() => {
+        typingSequence.classList.remove('typing-active-first');
+        typingSequence.classList.add('typing-active-accent');
+      }, delay);
+    }
     [...text].forEach((character) => {
       setTimeout(() => { typingParts[partIndex].textContent += character; }, delay);
       delay += 62;

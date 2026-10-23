@@ -1,4 +1,12 @@
-:root{--bg:#0d0f13;--accent:#FD3DB5}
-body{background:radial-gradient(circle at 50% -10%,#252a35 0%,#14171e 36%,#0b0d11 100%);background-attachment:fixed;background-image:radial-gradient(circle at 50% -10%,#252a35 0%,#14171e 36%,#0b0d11 100%)}
+:root{--bg:#0d0f13;--accent:#FD3DB5;--accent-gradient:linear-gradient(110deg,#ff9bd8 0%,#fd3db5 52%,#cf238e 100%)}
+
+.hero h1 .accent-line,.services h2 span,.section-top h2 span,.panel h2 span,.contact h2 span,.contact-intro h1 span,.project-page h1 span,.about-away h2 span,.about-hero h1 span,.about-bio h2 span,.writings h2 span,.work-heading h2 span,.about-cta h2 span,.history-tech,.coming-soon,.resume-link,.project-page .project-meta>.project-category,.project-arrow,.project-image-placeholder:before,.button-dark span,.contact-button span,.contact-submit span,.direct-label span{color:transparent!important;background-image:var(--accent-gradient);-webkit-background-clip:text;background-clip:text}
+.nav .active:after,.experience-list:after{background:var(--accent-gradient)!important}
+.filter-button:hover,.filter-button.active,.contact-button:hover{background:var(--accent-gradient)!important;border-color:transparent!important}
+body{position:relative;isolation:isolate;overflow-x:hidden;background:radial-gradient(circle at 50% -10%,#252a35 0%,#14171e 36%,#0b0d11 100%);background-attachment:fixed;background-image:radial-gradient(circle at 50% -10%,#252a35 0%,#14171e 36%,#0b0d11 100%)}
+.site-shell{position:relative;z-index:1}
+body:before{content:"";position:fixed;inset:-30%;z-index:0;pointer-events:none;opacity:.58;background:radial-gradient(circle at 18% 24%,rgba(253,61,181,.16),transparent 23%),radial-gradient(circle at 82% 70%,rgba(253,61,181,.12),transparent 26%),radial-gradient(circle at 52% 104%,rgba(110,75,255,.08),transparent 28%);filter:blur(42px);animation:ambientGlow 16s ease-in-out infinite alternate}
+@keyframes ambientGlow{0%{transform:translate3d(-10%, -7%, 0) scale(1)}35%{transform:translate3d(7%, 3%, 0) scale(1.08)}70%{transform:translate3d(-3%, 10%, 0) scale(1.14)}100%{transform:translate3d(10%, -2%, 0) scale(1.05)}}
+@media(prefers-reduced-motion:reduce){body:before{animation:none}}
 
 

@@ -49,9 +49,9 @@
 .about-page .about-away,.about-page .about-bio,.about-page .about-connect,.about-page .writings,.about-page .history,.about-page .about-cta,.about-page .history-item{border-top:0;border-bottom:0}
 .about-page .about-bio blockquote{border-left:0;padding-left:0}
 .about-page .site-footer{border-top:0}
-html:has(body.about-page){scroll-behavior:smooth;scroll-snap-type:y mandatory;overflow-x:hidden}
+html:has(body.about-page){scroll-behavior:smooth;overflow-x:hidden}
 body.about-page{overflow-x:hidden}
-.about-page main>section,.about-page .site-footer{scroll-snap-align:start;scroll-snap-stop:normal}
-.about-page main>section{min-height:100vh}
+.about-page main>section,.about-page .site-footer{scroll-snap-align:start}
+.about-page main>section:not(.writings){min-height:100vh}
 .about-page .about-visuals{align-content:center}
 @media(max-width:700px){.about-bio{display:block}.about-bio-copy h2{font-size:30px}.about-bio .about-visuals{height:260px;margin-top:55px}.about-bio .about-visuals>div{height:100%}.writings{display:block}.work-heading h2{font-size:18vw}.experience-row{grid-template-columns:1fr;gap:28px}.experience-row h3{font-size:22px}.experience-list:before,.experience-list:after{display:none}}
