@@ -21,6 +21,22 @@ if (homeProjects.length > 2) {
   });
 }
 
+const experienceCount = document.querySelector('.experience-count');
+if (experienceCount && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const countDuration = 4760;
+  const cycleDuration = 7000;
+  const startedAt = performance.now();
+  const updateExperienceCount = (now) => {
+    const elapsed = (now - startedAt) % cycleDuration;
+    const progress = Math.min(elapsed / countDuration, 1);
+    experienceCount.textContent = `XP ${Math.floor(progress * 100)}`;
+    requestAnimationFrame(updateExperienceCount);
+  };
+  requestAnimationFrame(updateExperienceCount);
+} else if (experienceCount) {
+  experienceCount.textContent = 'XP 100';
+}
+
 const typingSequence = document.querySelector('.typing-sequence');
 const typingParts = document.querySelectorAll('.typing-part');
 if (typingSequence && typingParts.length && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
