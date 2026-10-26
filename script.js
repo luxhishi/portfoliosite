@@ -10,6 +10,17 @@ const observer = new IntersectionObserver((entries) => entries.forEach((entry) =
 }), { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
+const homeProjects = [...document.querySelectorAll('.home-project-card')];
+if (homeProjects.length > 2) {
+  const shuffled = homeProjects.sort(() => Math.random() - 0.5);
+  shuffled.forEach((project, index) => {
+    const selected = index < 2;
+    project.hidden = !selected;
+    project.classList.toggle('home-project-visible', selected);
+    project.classList.toggle('visible', selected);
+  });
+}
+
 const typingSequence = document.querySelector('.typing-sequence');
 const typingParts = document.querySelectorAll('.typing-part');
 if (typingSequence && typingParts.length && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

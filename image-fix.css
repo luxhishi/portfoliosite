@@ -1,1 +1,16 @@
 .project-image-placeholder img{display:block;width:100%;height:100%;object-fit:cover}.project-image-placeholder:has(img):before{display:none}.detail-image{overflow:hidden;padding:0}.detail-image:before{content:none!important}.detail-image img{display:block;width:100%;height:100%;object-fit:cover}
+.project-logo-card img{object-fit:contain}
+.projects-directory .project-cards,.home-projects-directory .project-cards{gap:70px 58px}
+.home-projects-directory .home-project-card{display:none}
+.home-projects-directory .home-project-card.home-project-visible{display:block}
+.projects-directory .project-card,.home-projects-directory .project-card{border:0;background:transparent;padding:0;text-align:center}
+.projects-directory .project-image-placeholder,.home-projects-directory .project-image-placeholder{height:320px;border:0;background:transparent;padding:0}
+.projects-directory .project-image-placeholder img,.home-projects-directory .project-image-placeholder img{width:100%;height:100%;object-fit:contain}
+.projects-directory .project-logo-card img,.home-projects-directory .project-logo-card img{width:min(80%,300px)}
+.projects-directory .stylex-logo-card img,.home-projects-directory .stylex-logo-card img{width:min(112%,420px)}
+.projects-directory .card-heading,.home-projects-directory .card-heading{justify-content:center;border:0;padding:20px 0 16px}
+.projects-directory .card-heading h3,.home-projects-directory .card-heading h3{font-size:32px;margin:0}
+.projects-directory .project-role,.home-projects-directory .project-role{margin:10px 0 0;color:var(--muted);font:10px var(--mono);letter-spacing:.06em}
+.projects-directory .card-heading .project-arrow,.projects-directory .project-number,.home-projects-directory .card-heading .project-arrow,.home-projects-directory .project-number{display:none}
+.projects-directory .tech-stack,.home-projects-directory .tech-stack{justify-content:center;margin-top:0}
+@media(max-width:700px){.projects-directory .project-cards,.home-projects-directory .project-cards{gap:48px}.projects-directory .project-image-placeholder,.home-projects-directory .project-image-placeholder{height:260px}.projects-directory .card-heading h3,.home-projects-directory .card-heading h3{font-size:27px}}

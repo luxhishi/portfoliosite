@@ -3,17 +3,52 @@
 .back-link:hover{color:var(--accent)}
 .project-page h1{font-size:clamp(60px,10vw,140px);line-height:.9;letter-spacing:-.09em;margin:90px 0 30px}
 .project-page h1 span{color:var(--accent)}
-.project-page .project-lead{max-width:650px;color:var(--muted);font-size:18px;line-height:1.5}
-.project-page .project-meta{display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:70px;padding:20px 0}
-.project-page .project-meta>span{font:11px var(--mono);color:var(--muted);white-space:nowrap}
-.project-page .project-meta>.project-category{color:var(--accent);margin-right:auto}
+.project-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.55fr);gap:80px;align-items:start;margin-top:70px}
+.project-story{max-width:650px;padding-top:2px}
+.project-story-block+.project-story-block{margin-top:72px}
+.project-story-block h2{font-size:clamp(32px,4vw,54px);line-height:.98;letter-spacing:-.07em;margin:28px 0 24px}
+.project-story-block p:not(.eyebrow){max-width:650px;color:var(--muted);font-size:18px;line-height:1.6;margin:0}
+.project-feature{display:flex;flex-direction:column;align-items:center;margin-top:75px;text-align:center}
+.project-badge{display:flex;align-items:center;justify-content:center}
+.project-badge img{display:block;width:min(78vw,360px);height:auto;max-height:390px;object-fit:contain}
+.project-feature-copy{display:flex;flex-direction:column;align-items:center;min-width:0}
+.project-feature-copy h1{margin:28px 0 18px;font-size:clamp(48px,7vw,88px)}
+.project-feature-tech{margin:0;justify-content:center}
+.project-page .project-meta{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0}
+.project-specs-label{font:10px var(--mono);letter-spacing:.1em;color:var(--muted);margin:0 0 24px}
+.project-spec-row{display:grid;grid-template-columns:1fr auto;gap:20px;padding:0 0 22px;align-items:start}
+.project-spec-row span{font:10px var(--mono);letter-spacing:.08em;color:var(--muted)}
+.project-spec-row strong{font:11px var(--sans);font-weight:500;color:var(--text);text-align:right}
+.project-tech-label{margin:12px 0 16px}
+.project-page .project-meta .tech-stack{margin-top:0;justify-content:flex-start}
 .about-copy-block{max-width:650px;margin-top:60px}.about-copy-block p{font-size:18px;line-height:1.6;color:var(--muted);margin:0 0 24px}
-.detail-image{height:420px;margin-top:25px;border:1px dashed #5a5a55;background:#17191e;display:flex;align-items:center;justify-content:center;color:var(--accent);font:11px var(--mono);letter-spacing:.08em}
-.detail-image:before{content:'＋';font:34px var(--sans);margin-right:10px}
+.project-gallery-section{max-width:1000px;margin:90px auto 0}
+.project-gallery-section>.eyebrow{margin-bottom:22px}
+.project-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;align-items:start}
+.detail-image{min-width:0;margin:0;border:0;border-radius:18px;overflow:hidden;background:#17191e;display:flex;align-items:center;justify-content:center;color:var(--accent);font:11px var(--mono);letter-spacing:.08em}
+.detail-image img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}
+.project-logo-media{background:#11151b;padding:42px;min-height:420px}
+.project-logo-media:before{display:none}
+.project-logo-media img{max-height:340px;object-fit:contain}
+.detail-image:has(img){background:transparent}
+.detail-image.project-logo-media{background:#11151b}
+.detail-image:not(:has(img)){min-height:280px}
 @media(max-width:700px){.project-page{padding:70px 7vw}
 .project-page h1{font-size:19vw;margin-top:70px}
-.project-page .project-meta{flex-direction:column;align-items:flex-start}
-.detail-image{height:280px}
+ .project-hero-grid{display:block;margin-top:55px}
+ .project-page .project-meta{margin-top:55px}
+.project-gallery-section{margin-top:65px}
+.project-gallery{grid-template-columns:1fr}
+ .project-story-block+.project-story-block{margin-top:58px}
+ .project-story-block h2{font-size:40px}
+ .project-story-block p:not(.eyebrow){font-size:16px}
+.detail-image:not(:has(img)){min-height:220px}
+.project-logo-media{min-height:280px;padding:28px}
+.project-logo-media img{max-height:220px}
+.project-feature{margin-top:58px}
+.project-badge{margin-bottom:0}
+.project-badge img{width:min(78vw,300px);max-height:300px}
+.project-feature-copy h1{font-size:18vw;margin:24px 0 18px}
 }
 
 
